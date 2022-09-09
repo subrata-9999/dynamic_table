@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+
+    <title>table</title>
+
+    <script src="https://kit.fontawesome.com/8fcbe63841.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="main_container">
+
+    <div class="container">
+        <table class="_table">
+          <thead>
+            <tr>
+              <th width="20%" class="heading_row">ID</th>
+              <th width="20%" class="heading_row">NAME</th>
+              <th width="20%" class="heading_row">MOBILE</th>
+              <th width="20%" class="heading_row">EMAIL ID</th>
+              <th width="20%" class="heading_row">
+                <div class="add_row">
+                  <button class="successc" onclick="create_tr('table_body')">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="table_body">
+
+            <tr>
+              <td>
+                <input type="text" class="input_c idc" placeholder="JPLKI4526678">
+              </td>
+              <td>
+                <input type="text" class="input_c namec" placeholder="Subrata Pramanik">
+              </td>
+              <td>
+                <input type="tel" class="input_c numberc" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" minlength="10" placeholder="9883221097"></textarea>
+              </td>
+              <td>
+                <input type="text" class="input_c mailc" placeholder="subrataparam7@gmail.com">
+              </td>
+              <td>
+                
+                <div class="add_row">
+                  <button class="eye_container" onclick="add_tr(this)">
+                    <i class="fa-regular fa-eye"></i>
+                  </button>
+                  <button class="danger" onclick="remove_tr(this)">
+                    <i class="fa-sharp fa-solid fa-minus"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+
+      <div id="print">
+        <pre></pre>
+
+      </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
